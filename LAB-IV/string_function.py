@@ -1,0 +1,17 @@
+string = input("Enter a string: ")
+reversed_string = string[::-1]
+print(f"Reversed: {reversed_string}")
+is_palindrome = string == reversed_string
+print(f"Is palindrome: {is_palindrome}")
+substring = input("Enter a substring to check: ")
+ends_with = string.endswith(substring)
+print(f"Ends with '{substring}': {ends_with}")
+capitalized = string.title()
+print(f"Capitalized: {capitalized}")
+another_string = input("Enter another string: ")
+is_anagram = sorted(string) == sorted(another_string)
+print(f"Is anagram: {is_anagram}")
+vowels_removed = ''.join([char for char in string if char.lower() not in 'aeiou'])
+print(f"Without vowels: {vowels_removed}")
+longest_word_length = max(len(word) for word in string.split())
+print(f"Length of the longest word: {longest_word_length}")
